@@ -7,5 +7,6 @@ public class ForLoop
             System.out.println("The value of i is : " + i);
         }
 
+        System.out.println("i reacehd 11 and exit from the loop because the boolean expression is false atm");
     }
 }
