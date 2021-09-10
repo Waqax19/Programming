@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.TreeSet;
 
@@ -18,12 +20,16 @@ public class MyComparator implements Comparator<Students>
 
     public static void main(String[] args)
     {
-        TreeSet<Students> myObj = new TreeSet<Students>(new MyComparator());
+
+        ArrayList<Students> myObj = new ArrayList<Students>();
+
         myObj.add(new Students(45,"Rida"));
 
         myObj.add(new Students(11,"Adam"));
 
         myObj.add(new Students(19,"Ali"));
+
+        Collections.sort(myObj, new MyComparator());
 
         System.out.println(myObj);
 
