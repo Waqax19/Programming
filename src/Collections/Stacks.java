@@ -21,6 +21,9 @@ public class Stacks
 
         System.out.println("Elemetns in stack : " + myStack);
 
+        myStack.pop();
+        System.out.println("Elemetns in stack After pop : " + myStack);
+
         CheckEmpty = myStack.empty();
 
         System.out.println("If it is empty ? " + CheckEmpty);
