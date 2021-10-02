@@ -8,24 +8,25 @@ public class SetCod
     public static void main(String[] args)
     {
 
-       HashSet<String> hashSet = new HashSet<String>();
+       ArrayList<String> arrayList = new ArrayList<String>();
 
-        hashSet.add("One");
-        hashSet.add("Two");
-        hashSet.add("Three");
-        hashSet.add("Four");
-        hashSet.add("Five");
+        arrayList.add("One");
+        arrayList.add("Two");
+        arrayList.add("Three");
+        arrayList.add("Four");
+        arrayList.add("Five");
 
-        hashSet.add("One");
+        arrayList.add("One");
 
-        hashSet.add("Four");
+        arrayList.add("Four");
 
-        //adding of null elements
-        hashSet.add(null);
+        System.out.println("Original elements Order " + arrayList);
 
-        hashSet.add(null);//ignored
+        HashSet<String> hashSet = new HashSet<String>();
 
-        System.out.println("Unordered and no duplicate HashSet Elements ");
+        hashSet.addAll(arrayList);
+
+        System.out.println("UnOrdered HashSet elements without duplicate elements ");
 
         System.out.println(hashSet);
 
