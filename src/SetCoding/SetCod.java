@@ -8,27 +8,43 @@ public class SetCod
     public static void main(String[] args)
     {
 
-       ArrayList<String> arrayList = new ArrayList<String>();
+       HashSet<Integer> hashing = new HashSet<Integer>();
 
-        arrayList.add("One");
-        arrayList.add("Two");
-        arrayList.add("Three");
-        arrayList.add("Four");
-        arrayList.add("Five");
+        hashing.add(5);
+        hashing.add(10);
+        hashing.add(15);
+        hashing.add(20);
+        hashing.add(25);
 
-        arrayList.add("One");
+        System.out.println("Initial list of elements  " + hashing);
 
-        arrayList.add("Four");
+       hashing.remove(10);
 
-        System.out.println("Original elements Order " + arrayList);
+        System.out.println("Initial list of elements after removal of 10 " + hashing);
 
-        HashSet<String> hashSet = new HashSet<String>();
+        HashSet<Integer> hashing2 = new HashSet<Integer>();
+        hashing2.add(10);
+        hashing2.add(30);
 
-        hashSet.addAll(arrayList);
+        hashing.addAll(hashing2);
 
-        System.out.println("UnOrdered HashSet elements without duplicate elements ");
 
-        System.out.println(hashSet);
+        System.out.println("list of elements after adding elements from previous collection ");
+
+        System.out.println(hashing);
+
+        hashing.removeAll(hashing2);
+
+        System.out.println("List of elements after removal of elements from hasing2 ");
+
+        System.out.println(hashing);
+
+
+        hashing.clear();
+        System.out.println("After invoking clear funcion " + hashing);
+
+
+
 
     }
 }
