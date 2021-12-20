@@ -18,8 +18,8 @@ public class TimedSemaphores
 
     }
 
-    int availableSlots()
+    /*int availableSlots()
     {
        // return semaphores.getClass();//permits
-    }
+    }*/
 }

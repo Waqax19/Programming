@@ -92,12 +92,12 @@ public class MyMaps<K,V>
     }
 
 
-    public V get(K key)
+   /* public V get(K key)
     {
 
 
         //buckets.getHash(key);
-        Entry<K, V> bucket = buckets[myObj.getHash(key) % getBucketSize()];
+       // Entry<K, V> bucket = buckets[myObj.getHash(key) % getBucketSize()];
 
         while (bucket != null) {
             if (key == bucket.key) {
@@ -111,7 +111,7 @@ public class MyMaps<K,V>
     public int size() {
         return size;
     }
-
+*/
 
 
     private int getBucketSize()

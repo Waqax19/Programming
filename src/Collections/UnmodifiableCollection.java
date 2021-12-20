@@ -6,23 +6,19 @@ import java.util.List;
 
 public class UnmodifiableCollection
 {
-    private List<Integer> myList = new ArrayList<>();
 
-    public void addValueInList(Integer val)
-    {
-        myList.add(val);
-    }
-    public List<Integer> getIntList()
-    {
-        return Collections.unmodifiableList(myList);
-    }
     public static void main(String[] args)
     {
-        UnmodifiableCollection unmodifiableCollection = new UnmodifiableCollection();
-        unmodifiableCollection.addValueInList(55);
 
-        List<Integer> list = unmodifiableCollection.getIntList();
+    }
 
-        list.add(88);
+    public static int linearSearch(int[] list , int key)
+    {
+        for (int i = 0; i < list.length; i++)
+        {
+            if (key == list[i])
+                return i;
+        }
+        return -1;
     }
 }
