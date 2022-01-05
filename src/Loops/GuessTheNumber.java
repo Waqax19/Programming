@@ -6,28 +6,16 @@ public class GuessTheNumber
 {
     public static void main(String[] args)
     {
-        int num = (int) (Math.random() * 101);
+      //conversion
 
-        Scanner userInput = new Scanner(System.in);
+        String s = "200";
 
-        System.out.println("Guess the number between 0 and 100");
+        int i = Integer.parseInt(s);
 
-        int guess = -1;
+        System.out.println(s + 500);//?string
+        System.out.println(500  + i);//int
 
-        while (guess != num)
-        {
 
-            System.out.println("Enter the guess ");
 
-             guess = userInput.nextInt();
-
-            if (guess == num) {
-                System.out.println("Yes, the number is " + num);
-
-            } else if (guess > num) {
-                System.out.println("Your guess is too high");
-            } else
-                System.out.println("Your guess is too low ");
-        }
     }
 }
