@@ -9,39 +9,37 @@ public class PalindromeString
     {
         Scanner userInput = new Scanner(System.in);
 
-        System.out.println("Enter a string ");
+        System.out.println("Enter a String ");
 
-        String s = userInput.nextLine();
+        String newString = userInput.nextLine();
 
-        int low = 0;//starting index
+        int startingIndex = 0;
 
-        int high = s.length() - 1;
+        int lastIndex = newString.length() - 1;
 
         boolean isPalindrome = true;
 
-        while (low < high)
+        while (startingIndex < lastIndex)
         {
-            char lowerChars = s.charAt(low++);//mooon
-
-            char highChars = s.charAt(high--);
-
-            if(lowerChars != highChars)
+            if (newString.charAt(startingIndex) != newString.charAt(lastIndex))
             {
                 isPalindrome = false;
                 break;
-
             }
-            /*low++;
-            high--;*/
+
+            startingIndex++;
+            lastIndex--;
+
         }
 
-        if (isPalindrome == true)
+        if(isPalindrome)
         {
-            System.out.println(s + "  is a palindrome");
+            System.out.println("Yes it is a palindrome ");
         }
-
         else
-            System.out.println(s + " is not a palindrome");
+        {
+            System.out.println("it is not a palindrome");
+        }
 
     }
 }
