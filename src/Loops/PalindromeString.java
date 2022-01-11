@@ -5,41 +5,44 @@ import java.util.Scanner;
 
 public class PalindromeString
 {
+
     public static void main(String[] args)
     {
-        Scanner userInput = new Scanner(System.in);
+        System.out.println("The grade is : ");
 
-        System.out.println("Enter a String ");
+        System.out.println(grade(85));
 
-        String newString = userInput.nextLine();
 
-        int startingIndex = 0;
-
-        int lastIndex = newString.length() - 1;
-
-        boolean isPalindrome = true;
-
-        while (startingIndex < lastIndex)
-        {
-            if (newString.charAt(startingIndex) != newString.charAt(lastIndex))
-            {
-                isPalindrome = false;
-                break;
-            }
-
-            startingIndex++;
-            lastIndex--;
-
-        }
-
-        if(isPalindrome)
-        {
-            System.out.println("Yes it is a palindrome ");
-        }
-        else
-        {
-            System.out.println("it is not a palindrome");
-        }
 
     }
+
+    public static char grade(double score)
+    {
+        if (score >= 90)
+        {
+            return 'A';
+        }
+
+        else if (score >= 70)
+        {
+            return 'B';
+        }
+
+        else if (score >= 60)
+        {
+            return 'C';
+        }
+
+        else if (score >= 50)
+        {
+            return 'D';
+        }
+
+        else
+        {
+            return 'F';
+        }
+    }
+
+
 }
