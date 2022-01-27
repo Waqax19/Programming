@@ -3,11 +3,9 @@ package Inheritance;
 public class Vehicle
 {
 
-    protected String brand = "Fiat";
-
-    public void engine()
+    void running()
     {
-        System.out.println("1500 cc Engine .. ");
+        System.out.println("Vehicle is running ...");
     }
 
 }
