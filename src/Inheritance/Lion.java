@@ -1,34 +1,22 @@
 package Inheritance;
 
-public class Lion extends ANimaL
+public class Lion extends Animal
 {
-    String color = "White";
+  static void myMethod(Animal a)
+  {
+      /*if (a instanceof Lion)
+      {*/
+          Lion myLion = (Lion) a;
 
-    Lion()
-    {
-        super();
-    }
-
-    void eat()
-    {
-        System.out.println("Lion is eating deer ... ");
-    }
-
-    void running()
-    {
-        System.out.println("Lion is running...");
-    }
-
-    void printDetails()
-    {
-
-       eat();
-       running();
-    }
+          System.out.println("Yes we performed type casting successfully...");
+     // }
+  }
 
     public static void main(String[] args)
     {
-        Lion myLion = new Lion();
+        Animal a = new Lion();
+
+        Lion.myMethod(a);
 
     }
 }
