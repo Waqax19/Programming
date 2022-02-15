@@ -29,7 +29,7 @@ public class StudentDriver
 
             ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("serializable.txt"));
 
-            Stundent stundent = (Stundent) inputStream.readObject();
+            Stundent stundent = (Stundent) inputStream.readObject();//deserializtion, decoding
 
             System.out.println(stundent.id + " " + stundent.name);
 
