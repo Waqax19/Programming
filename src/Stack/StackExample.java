@@ -9,42 +9,24 @@ public class StackExample
     {
         Stack<Integer> myStack = new Stack<>();
 
-        boolean result = myStack.empty();
-
-        System.out.println("Is stack empty ? " + result);//true
 
         myStack.push(58);
         myStack.push(12);
         myStack.push(47);
         myStack.push(98);
 
-        System.out.println("Element removed " + myStack.pop());
+        System.out.println("Iteration over the stack using forEach() method ");
 
-        System.out.println("Elements in Stack : " + myStack);
-
-        System.out.println(myStack.peek());
-
-        //searching for location
-
-        System.out.println("Stack : " + myStack);
-
-        System.out.println("Location of 47 : " + myStack.search(47));
-
-        System.out.println("The stack size is : " + myStack.size());
-
-        result = myStack.empty();
-
-        System.out.println("Is stack empty ? " + result);
-
-        Iterator iterator = myStack.iterator();
-
-        while (iterator.hasNext())
+      /*  for (Integer myInt : myStack)
         {
-            Object values = iterator.next();
+            System.out.println(myInt);
+            
+        }*/
 
-            System.out.println(values);
-        }
-
+        myStack.forEach(n ->
+        {
+            System.out.println(n);
+        });
     }
 
 }
