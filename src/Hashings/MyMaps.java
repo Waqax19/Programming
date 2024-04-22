@@ -1,3 +1,4 @@
+/*
 package Hashings;
 
 public class MyMaps<K,V>
@@ -92,7 +93,8 @@ public class MyMaps<K,V>
     }
 
 
-   /* public V get(K key)
+   */
+/* public V get(K key)
     {
 
 
@@ -111,7 +113,8 @@ public class MyMaps<K,V>
     public int size() {
         return size;
     }
-*/
+*//*
+
 
 
     private int getBucketSize()
@@ -138,3 +141,4 @@ public class MyMaps<K,V>
 
     }
 }
+*/

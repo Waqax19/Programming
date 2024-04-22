@@ -1,57 +1,54 @@
 package OptimizingCodes;
 
+
 import java.util.Scanner;
 
 public class OptimizingCodes
 {
-    public static void main(String[] args)
-    {
-        Scanner input = new Scanner(System.in);
-         System.out.print("Enter an index for a Fibonacci number: ");
-         int index = input.nextInt();
 
-         // Find and display the Fibonacci number
-         System.out.println("The Fibonacci number at index "
-             + index + " is " + fib(index));
+    int i = 0;
+    int x;
+
+    public void myFunction()
+    {
+        int i = 5;
+
+        i = 10;
+
+        System.out.println(i);
+    }
+
+    public  void  anOtherFunction()
+    {
+
+        for ( x = 0; x < 10; x++)
+        {
+            System.out.println("Looping");
+        }
+
+        for ( x = 0; x < 10; x++)
+        {
+            System.out.println("...");
+        }
 
     }
 
-    public static long fib(long num)
+    public static void main(String[] args)
     {
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Enter the number of points ");
 
-        long f0 = 0;//f(0)
-        long f1 = 1;
-        long f2 = 2;//f(2)
+        int numOfPoints = userInput.nextInt();
 
-        if(num == 0)
-        {
-            return f0;
-        }
-        else if (num == 1)
-        {
-            return f1;
-        }
+        double[][] points = new double[numOfPoints][2];
 
-        else if (num == 2)
+        System.out.println("Enter " + numOfPoints + " points ");
+        for (int i = 0; i < points.length; i++)
         {
-            return f2;
+            points[i][0] = userInput.nextDouble();
+            points[i][1] = userInput.nextDouble();
         }
 
-        for (int i = 3; i <= num; i++)
-        {
-            f0 = f1;
 
-            f1 = f2;
-
-            f2 = f0 + f1;
-        }
-
-        return f2;
-        /*f (index == 0) // Base case
-             return 0;
-        else if (index == 1) // Base case
-             return 1;
-         else // Reduction and recursive calls
-         return fib(index - 1) + fib(index - 2);*/
     }
 }

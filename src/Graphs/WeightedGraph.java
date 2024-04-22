@@ -1,9 +1,11 @@
 package Graphs;
 
+
 import java.util.LinkedList;
 
 public class WeightedGraph
 {
+
     static class Edge
     {
         int sourceOfGraph;

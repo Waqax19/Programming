@@ -1,17 +1,20 @@
+/*
 package Hashings;
 
 public class Entry<K,V>
 {
-    final K key;
+    public final K key;
 
-    V value;
+    public V value;
 
-    Entry<K,V> next;
+    public Entry<K,V> next;
 
-    /*public MyMap()
+    */
+/*public MyMap()
     {
 
-    }*/
+    }*//*
+
     public Entry(K key, V value, Entry<K,V> next)
     {
         this.key = key;
@@ -78,3 +81,4 @@ public class Entry<K,V>
                 '}';
     }
 }
+*/
